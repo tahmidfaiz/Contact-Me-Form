@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me Form</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!--  ===================== Title ============================   -->
+    <section class ="home" id="home">
+        <div class="home-content"> 
+            <h1>Contact Me Form</h1>
+            <p> Contact me by providing your information so I may be able to respond back to 
+                your message.   </p>
+        </div>
+
+ 
+
+
+  <!--  ===================== Contact form ============================   -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact Me!</h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" id="name" placeholder="Full Name">
+                <input type="email" id="email" placeholder="Email Address">
+            </div>
+
+            <div class="input-box">
+                <input type="number" id="number" placeholder="Mobile Number">
+                <input type="text" id="subject" placeholder="Subject">
+            </div>
+
+           
+            <textarea id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <button class="btn" onclick="sendMail()">Send Message</button>
+        </form>
+
+    </section>
+    </section>
+
+    <script src="script.js"></script> 
+
+    <!-- email.js verified by using public key -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">(function(){
+      emailjs.init("TFaywh-S4xE2EMkVz");
+  })();
+  </script>
+</body>
